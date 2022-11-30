@@ -1,0 +1,78 @@
+.container-fluid {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    column-gap: 50px;
+}
+
+
+.site-logo {
+    width: 70px;
+    display: inline;
+    margin-right: 15px;
+    border-radius: 50px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+}
+
+.title h1 {
+    display: inline;
+    color: #188F64;
+}
+
+.bgAndTxt {
+    background-color: #effff9;
+}
+
+.practice-title {
+    color: #202020;
+}
+
+.left-contain {
+    margin-top: 1%;
+    padding-left: 5%;
+}
+
+.profile-pic {
+    width: 72px;
+    height: 72px;
+    margin-right: 10px;
+}
+
+.local-data {
+    border-radius: 10px;
+}
+
+.rightSideData {
+    position: sticky;
+    top: 10px;
+}
+
+.myCards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+@media screen and (max-width: 620px) {
+    .container-fluid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .myCards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .rightSideData {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (min-width: 621px) and (max-width: 920px) {
+    .myCards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
